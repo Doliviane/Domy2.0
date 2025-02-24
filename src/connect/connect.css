@@ -1,0 +1,36 @@
+
+*{
+
+    margin: 10px;
+}
+.wrapper{
+    gap: 50px;
+    background-color:blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+.wrapper h1{
+    text-align: center;
+    font-size: 50px;
+}
+.box{
+    border: 2px olivedrab solid;
+    justify-content: center;
+}
+.forgot{
+    justify-content: space-between;
+}
+body{
+    background-image: linear-gradient(to right, brown, yellowgreen);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
