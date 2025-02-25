@@ -10,7 +10,7 @@ function Navbar() {
          
         <li><Link to="/">Accueil</Link></li>
         <li><Link to="/about">À propos</Link></li>
-        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/imageupload">Upload</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/connect" >Log in</Link></li>
       </ul>
