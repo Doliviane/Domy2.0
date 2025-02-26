@@ -3,6 +3,13 @@
     background-color: #e00a0a;
     padding: 10px;
     text-align: center;
+    width: 100%;
+    width: 100%;
+  
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
   }
   
   .navbar ul {

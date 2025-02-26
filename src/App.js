@@ -5,7 +5,8 @@ import './App.css';
 import Navbar from './navbar/navbar';
 import LogIn from './connect/connect';
 import ImageUpload from "./upload/imageupload";
-
+import Footer from './navbar/footbar'
+import Create from './create/create'
  function App() {
   return (
 <BrowserRouter>
@@ -16,15 +17,17 @@ import ImageUpload from "./upload/imageupload";
         <div className="content">
           <Routes>
          
-            <Route path="/" element={<h2>Bienvenue sur la page</h2>} />
-            <Route path="/about" element={<h2>À propos</h2>} />
+            <Route path="/" element={<h2>Bienvenue sur la page
+            </h2>} />
+            <Route path="/create" element={<Create />} />
             <Route path="/imageupload" element={<ImageUpload/>} />
             <Route path="/contact" element={<h2>Contact</h2>} />
             <Route path="/connect" element={<LogIn />} />
           </Routes>
         </div>
       </div>
-    
+      
+      <Footer />
 </BrowserRouter> 
    
     );

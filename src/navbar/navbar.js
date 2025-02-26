@@ -9,12 +9,13 @@ function Navbar() {
       <ul>
          
         <li><Link to="/">Accueil</Link></li>
-        <li><Link to="/about">À propos</Link></li>
+        <li><Link to="/create">creer votre souhait</Link></li>
         <li><Link to="/imageupload">Upload</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/connect" >Log in</Link></li>
       </ul>
     </nav>
+
     
   );
 }

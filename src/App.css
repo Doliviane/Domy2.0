@@ -1,34 +1,24 @@
 .App {
   text-align: center;
- 
+  flex: 1;
 }
 
 /* Nabar */
 /*  */
-.navbar {
-  background-color: #333;
-  padding: 10px;
-  text-align: center;
-}
 
-.navbar ul {
-  list-style: none;
+
+
+
+body, html {
+  margin: 0;
   padding: 0;
+  height: 100%;
+  overflow-y: auto;
 }
 
-.navbar ul li {
-  display: inline;
-  margin: 0 20px;
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.navbar ul li a:hover {
-  color: #f0a500;
-}
-
 
