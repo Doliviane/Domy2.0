@@ -4,8 +4,8 @@ const Register = () => {
 
     return(
         <section className="register">
-            <form action="">
-                <label htmlFor="firstName">First Name:</label>
+            <form className="forme" action="">
+
                 <input className="box" type="text" placeholder="username" required/>
             </form>
         </section>

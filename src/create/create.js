@@ -3,6 +3,7 @@ import './create.css';
 import { Link } from 'react-router-dom';
 import Sidebar from '../navbar/menubar';
 import ImageUpload from "../upload/imageupload";
+import Wish from './wish';
 
 function Create() {
   return (
@@ -12,6 +13,7 @@ function Create() {
         
        
          <Link to="/imageupload">Upload</Link>
+        <Link to="/wish">Wish</Link>
         </div>
   );
 }
