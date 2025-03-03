@@ -1,11 +1,11 @@
 
 *{
 
-    margin: 10px;
+    margin: 5px;
 }
 .wrapper{
     gap: 50px;
-    background-color:blueviolet;
+    background-color:rgb(126, 34, 246);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,12 +25,4 @@
 }
 .forgot{
     justify-content: space-between;
-}
-body{
-    background-image: linear-gradient(to right, brown, yellowgreen);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }

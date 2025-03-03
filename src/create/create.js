@@ -7,11 +7,12 @@ import ImageUpload from "../upload/imageupload";
 function Create() {
   return (
     <div className="wrapper">
-           <Sidebar/>
+           
          <h1> Page de creation</h1>
         
-       
-         <Link to="/imageupload">Upload</Link>
+         <div id='App-sidebar'> <Sidebar /></div>
+
+         <Link to="/imageupload"> <ImageUpload/></Link>
         </div>
   );
 }

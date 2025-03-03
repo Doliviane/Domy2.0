@@ -1,10 +1,10 @@
 /* src/navbar/Footer.css */
 
 .footer {
-    background-color: #333;
+    background-color: transparent;
     color: white;
     width: 100%;
-  padding: 3rem 1rem;
+  padding: 0.5rem 0,5rem;
   text-align: center;
   position: relative;
   left: 0;
