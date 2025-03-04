@@ -1,6 +1,8 @@
 import React from 'react';
 import './connect.css';
 import { FaUser, FaLock } from "react-icons/fa";
+import {Link} from "react-router-dom";
+import RegisterPage from "./register";
 
 function LogIn() {
   return (
@@ -24,7 +26,7 @@ function LogIn() {
         <button type="submit">Login</button>
 
         <div className="register-link">
-          <p> Don't have an account?  <a href="#">Register</a> </p>
+          <p> Don't have an account? <Link to="/register">Register</Link>  </p>
         </div>
       </form>
     </div>

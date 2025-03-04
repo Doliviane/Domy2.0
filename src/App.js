@@ -7,28 +7,21 @@ import LogIn from './connect/connect';
 import ImageUpload from "./upload/imageupload";
 import Footer from './navbar/footbar'
 import Create from './create/create'
+import Container from './container/Container';
  function App() {
   return (
-<BrowserRouter>
-<div className="App">
-        {/* Afficher la navbar */}
-        <Navbar />
+<div className='App'>
+  {/* Afficher la navbar */}
+  <div id='App-nav'> <Navbar /></div>
+  <div id='App-Container'><Container/></div>
+  <div id='App-footer'><Footer /></div>
+ 
 
-        <div className="content">
-          <Routes>
-         
-            <Route path="/" element={<h2>Bienvenue sur la page
-            </h2>} />
-            <Route path="/create" element={<Create />} />
-            <Route path="/imageupload" element={<ImageUpload/>} />
-            <Route path="/contact" element={<h2>Contact</h2>} />
-            <Route path="/connect" element={<LogIn />} />
-          </Routes>
-        </div>
-      </div>
-      
-      <Footer />
-</BrowserRouter> 
+
+
+
+</div>
+        
    
     );
     

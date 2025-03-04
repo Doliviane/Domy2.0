@@ -1,8 +1,28 @@
-.App {
-  text-align: center;
-  flex: 1;
+body {
+  background-color: rgb(45, 46, 44);
 }
 
+#App-Container{
+  flex-grow: 1;
+  padding: 1rem;
+  padding-bottom:2000px;
+  text-align: center;
+  background-color:bisque;
+  border-color: aqua;
+   
+}
+#App-nav{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #333;
+  color: white;
+  padding: 10rem;
+}
+#App-footer{
+ 
+  
+}
 /* Nabar */
 /*  */
 
@@ -13,7 +33,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-y: auto;
+  
 }
 
 #root {
