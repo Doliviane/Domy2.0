@@ -7,6 +7,7 @@ import ImageUpload from "../upload/imageupload";
 import Footer from '../navbar/footbar'
 import Create from '../create/create'
 import RegisterPage from '../connect/register'
+import Pic from '../create/picture';
 
 function Navbar() {
   return (
@@ -20,6 +21,7 @@ function Navbar() {
         <li><Link to="/imageupload">Upload</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/connect">Log in</Link></li>
+        <li>  <Link to="/picture"> click </Link></li>
       </ul>
     </nav>
 
@@ -29,15 +31,20 @@ function Navbar() {
         
 
         <div className="content">
-          <Routes>
+        <Routes>
          
-            <Route path="/" element={<h2>Bienvenue sur la page
-            </h2>} />
-            <Route path="/create" element={<Create />} />
-            <Route path="/imageupload" element={<ImageUpload/>} />
-            <Route path="/footbar" element={<h2>Contact</h2>} />
-            <Route path="/connect" element={<LogIn />} />
-          </Routes>
+         <Route path="/" element={<h2>Bienvenue sur la page
+         </h2>} />
+         <Route path="/create" element={<Create />} />
+         <Route path="/create/picture" element={<Pic />} />
+         <Route path="/imageupload" element={<ImageUpload/>} />
+         <Route path="/footbar" element={<h2>Contact</h2>} />
+         <Route path="/connect" element={<LogIn />} />
+         <Route path="/connect/register" element={<RegisterPage />} />
+
+         
+       </Routes>
+         
         </div>
       </div>
       

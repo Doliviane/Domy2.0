@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import "./register.css";
+import {Link} from "react-router-dom";
 
 const RegisterPage = () => {
     // État local pour stocker les valeurs du formulaire
@@ -40,25 +42,25 @@ const RegisterPage = () => {
 
         // Validation du prénom
         if (!formData.firstName.trim()) {
-            newErrors.firstName = 'Le prénom est requis';
+            newErrors.firstName = 'Please enter your surname';
         }
 
         // Validation du nom
         if (!formData.lastName.trim()) {
-            newErrors.lastName = 'Le nom est requis';
+            newErrors.lastName = 'please enter your name';
         }
 
         // Validation de l'email
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!formData.email.trim()) {
-            newErrors.email = 'L\'email est requis';
+            newErrors.email = 'Please enter your mail adress';
         } else if (!emailRegex.test(formData.email)) {
             newErrors.email = 'Format d\'email invalide';
         }
 
-        // Validation du mot de passe
+        // Validation of tht password
         if (!formData.password) {
-            newErrors.password = 'Le mot de passe est requis';
+            newErrors.password = 'please enter your password';
         } else if (formData.password.length < 8) {
             newErrors.password = 'Le mot de passe doit contenir au moins 8 caractères';
         }
@@ -124,7 +126,7 @@ const RegisterPage = () => {
                         <div className="grid grid-cols-1 gap-4 mb-4">
                             <div>
                                 <label htmlFor="firstName" className="sr-only">
-                                    Prénom
+                                    firstName
                                 </label>
                                 <input
                                     id="firstName"
@@ -144,7 +146,7 @@ const RegisterPage = () => {
 
                             <div>
                                 <label htmlFor="lastName" className="sr-only">
-                                    Nom
+                                    Name
                                 </label>
                                 <input
                                     id="lastName"
@@ -165,7 +167,7 @@ const RegisterPage = () => {
 
                         <div className="mb-4">
                             <label htmlFor="email" className="sr-only">
-                                Adresse email
+                                 email adress
                             </label>
                             <input
                                 id="email"
@@ -186,7 +188,7 @@ const RegisterPage = () => {
 
                         <div className="mb-4">
                             <label htmlFor="password" className="sr-only">
-                                Mot de passe
+                                Password
                             </label>
                             <input
                                 id="password"
@@ -207,7 +209,7 @@ const RegisterPage = () => {
 
                         <div>
                             <label htmlFor="confirmPassword" className="sr-only">
-                                Confirmer le mot de passe
+                                Confirm Your Password
                             </label>
                             <input
                                 id="confirmPassword"
@@ -232,14 +234,13 @@ const RegisterPage = () => {
                             type="submit"
                             className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         >
-                            S'inscrire
+                            Sign In
                         </button>
                     </div>
 
                     <div className="text-sm text-center">
-                        <a href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">
-                            Vous avez déjà un compte ? Connectez-vous
-                        </a>
+                       
+                        <Link  to="/connect" className="font-medium text-indigo-600 hover:text-indigo-500">Vous avez déjà un compte ? Connectez-vous</Link>
                     </div>
                 </form>
             </div>
