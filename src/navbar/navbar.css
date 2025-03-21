@@ -9,16 +9,24 @@
     min-height: 100vh;
   }
 .navbar {
-    background-color: #e00a0a;
+    background: linear-gradient(blue, red, violet);
     padding: 10px;
     text-align: center;
     width: 100%;
     position: sticky;
-   
+   background-color: black;
     position: fixed;
     top: 0;
     left: 0;
   
+
+  }
+  .navbar .logo{
+    background: linear-gradient(45deg, red, #da1c65);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: flex;
 
   }
   
@@ -33,6 +41,7 @@
   }
   
   .navbar ul li a {
+    font-weight: 500;
     color: white;
     text-decoration: none;
     font-size: 18px;

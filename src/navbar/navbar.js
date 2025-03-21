@@ -8,19 +8,23 @@ import Footer from '../navbar/footbar'
 import Create from '../create/create'
 import RegisterPage from '../connect/register'
 import Pic from '../create/picture';
+import { FaHome, FaUpload} from "react-icons/fa";
+import { IoIosContacts ,IoIosCreate, IoIosLogIn} from "react-icons/io";
+import Home from '../HomePage/Home';
 
 function Navbar() {
   return (
     <BrowserRouter className="layout">
         
     <nav className="navbar">
+      <h1 className='logo'> DoMyWish </h1>
       <ul>
 
-        <li><Link to="/">Accueil</Link></li>
-        <li><Link to="/create">creer votre souhait</Link></li>
-        <li><Link to="/imageupload">Upload</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/connect">Log in</Link></li>
+        <li><Link to="/Home"><FaHome />Accueil</Link></li>
+        <li><Link to="/create"> <IoIosCreate />creer votre souhait</Link></li>
+        <li><Link to="/imageupload">  <FaUpload />Upload</Link></li>
+        <li><Link to="/contact"> <IoIosContacts />About us</Link></li>
+        <li><Link to="/connect"> <IoIosLogIn />Log in</Link></li>
         <li>  <Link to="/picture"> click </Link></li>
       </ul>
     </nav>
@@ -28,13 +32,11 @@ function Navbar() {
 
       <div className="App">
       {/* Afficher la navbar */}
-        
-
-        <div className="content">
-        <Routes>
-         
-         <Route path="/" element={<h2>Bienvenue sur la page
-         </h2>} />
+       
+  <Routes>
+  
+        <Route path="/Home" element={/*<h2>Bienvenue sur la page
+    </h2>*/ <Home /> } />
          <Route path="/create" element={<Create />} />
          <Route path="/create/picture" element={<Pic />} />
          <Route path="/imageupload" element={<ImageUpload/>} />
@@ -44,13 +46,20 @@ function Navbar() {
 
          
        </Routes>
+ 
+
+       
+        
+
+        <div className="content">
+        
          
         </div>
       </div>
       
       
      
-</BrowserRouter> 
+</BrowserRouter > 
    
   );
 }
