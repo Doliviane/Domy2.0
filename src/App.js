@@ -9,7 +9,7 @@ import Footer from './navbar/footbar'
 import Create from './create/create'
 import Container from './container/Container';
 import RegisterPage from "./connect/register";
-import Pic from "./create/picture";
+import Pic from "./create/GiftBox";
 import Home from "./HomePage/Home";
 
 

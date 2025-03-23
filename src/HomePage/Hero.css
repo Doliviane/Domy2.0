@@ -1,0 +1,98 @@
+.hero{
+    margin : 0px 120px;
+    margin-top: 270px;
+}
+.hero .hero-text{
+    color: red;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    
+    
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+.hero-text .text1{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0066;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    animation: bounce 1s infinite;
+   
+    
+   
+}
+.hero-text .text2{
+    position: absolute;
+    right: 5;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    border-right: 3px solid red;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.5s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+.hero-explore{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: fit-content;
+    margin-top: 70px;
+    padding: 5px 8px;
+    padding-left: 30px;
+    border-radius: 60px;
+    background-color: white;
+    cursor: pointer;
+}
+.hero-explore a{
+    color: #292929;
+    font-size: 30px;
+    font-weight: 500;
+}
+.hero-dot-play{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-dots{
+    display: flex;
+    align-items: center;
+    gap: 23px; 
+    cursor: pointer; 
+    
+}
+.hero-dot.orange {
+    background-color: orange; /* Active dot color */
+}
+.hero-play img {
+    width: 50px;
+}
+.hero-dot{
+    width: 5px;
+    height: 15px;
+    border-radius:7.5px ;
+    border-color: aqua;
+    cursor: pointer; 
+}

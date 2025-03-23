@@ -57,6 +57,14 @@ function ImageUpload() {
                    ) ))}
                 </div>
             </div>
+            <div className="content">
+            <h1 data-content="text">HAPPY BIRTHDAY</h1>
+            <div className="author">
+                <h2>Text</h2>
+                <p><b>e</b></p>
+            </div>
+            <div className="model"></div>
+        </div>
            
        
         </div>

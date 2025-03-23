@@ -7,7 +7,7 @@ import ImageUpload from "../upload/imageupload";
 import Footer from '../navbar/footbar'
 import Create from '../create/create'
 import RegisterPage from '../connect/register'
-import Pic from '../create/picture';
+import Pic from '../create/GiftBox';
 import { FaHome, FaUpload} from "react-icons/fa";
 import { IoIosContacts ,IoIosCreate, IoIosLogIn} from "react-icons/io";
 import Home from '../HomePage/Home';

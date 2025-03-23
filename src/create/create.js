@@ -3,7 +3,7 @@ import './create.css';
 import { Link } from 'react-router-dom';
 import Sidebar from '../navbar/menubar';
 import ImageUpload from "../upload/imageupload";
-import Pic from './picture';
+import Pic from './GiftBox';
 
 function Create() {
   return (

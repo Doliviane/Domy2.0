@@ -1,9 +1,22 @@
-import React from "react";
-function Home() {
+import React, { useState } from "react";
+import "./Home.css" 
+import Background from "./Background/Background" 
+import Hero from './Hero';
+function Home() { 
+
+     
+    const [heroCount,setHeroCount] = useState(0);
+    const [playStatus,setPlayStatus] = useState(false); 
+
     return (
       <div className="container">
-        <h1>Let's make your family member and friends HAPPY</h1>
-        <h2> welcome to the DoMyWish, a beautiful present for your loved ones</h2>
+        <Background playStatus={playStatus} heroCount= {heroCount}/>
+        <Hero  setPlayStatus= { setPlayStatus}
+        heroCount= { heroCount}
+        setHeroCount = { setHeroCount}
+        playStatus = { playStatus}/> 
+
+
            </div>
     );
   }

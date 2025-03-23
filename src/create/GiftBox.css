@@ -1,0 +1,137 @@
+.gift-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    cursor: pointer;
+  }
+  
+  /* 📦 Boîte cadeau */
+  .gift-box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 4px solid #cc0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease-out;
+  }
+  
+  /* 🎀 Ruban rouge */
+  .ribbon {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #cc0000;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .ribbon::before,
+  .ribbon::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #cc0000;
+  }
+  
+  .ribbon::before {
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  
+  /* 🎩 Couvercle du cadeau */
+  .lid {
+    position: absolute;
+    top: -30px;
+    width: 160px;
+    height: 30px;
+    background-color: white;
+    border: 4px solid #cc0000;
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  /* 📦 Boîte intérieure */
+  .box {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  
+  /* 🎉 Animation d'ouverture et de fermeture */
+  .gift-box.open .lid {
+    transform: translateY(-50px) rotate(-10deg);
+  }
+  
+  .gift-box.open {
+    transform: scale(1.1);
+  }
+  
+  /* 🎊 Message de surprise */
+  .surprise {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #cc0000;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* 🎆 Confettis */
+  .confetti-container {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0.7;
+    animation: fall 1.5s linear forwards;
+  }
+  
+  @keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(200px) rotate(360deg); }
+  }
+  
+  /* Confettis aléatoires */
+  .confetti:nth-child(odd) {
+    background-color: gold;
+  }
+  
+  .confetti:nth-child(3n) {
+    background-color: blue;
+  }
+  
+  .confetti:nth-child(5n) {
+    background-color: green;
+  }
+  
+  /* 🎁 Effet de "bounce" pour le cadeau */
+  .gift-box.open {
+    animation: bounce 1s ease-out forwards;
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
